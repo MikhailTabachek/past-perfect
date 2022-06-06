@@ -2,14 +2,16 @@ import React from "react"
 import { Container, AppBar, Typography, Grow, Grid} from "@material-ui/core"
 
 import Posts from "./components/Posts/Posts"
-import Forms from "./components/Posts/Forms"
+import Form from "./components/Form/Form"
 import memories from './images/past-perfect.png'
+import useStyles from './styles'
 
 
 const App = () => {
+  const classes = useStyles()
   return(
     <Container maxwidth="lg"> 
-      <AppBar position="ststic" color="inherit">
+      <AppBar className={classes.appBar} position="ststic" color="inherit">
         <Typography variant="h2" align="center">Memories</Typography>
         <img src={memories} alt="memories" height="60"/>
       </AppBar>
