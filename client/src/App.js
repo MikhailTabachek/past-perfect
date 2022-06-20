@@ -18,13 +18,13 @@ const App = () => {
   }, [dispatch])
   return(
     <Container maxwidth="lg"> 
-      <AppBar className={classes.appBar} position="ststic" color="inherit">
+      <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">Memories</Typography>
         <img className={classes.image} src={memories} alt="memories" height="60"/>
       </AppBar>
       <Grow in>
         <Container>
-          <Grid containet justify="space-between" spacing='3'>
+          <Grid container justify="space-between" spacing='3'>
             <Grid item xs={12} sm={7}>
               <Posts />
             </Grid>
