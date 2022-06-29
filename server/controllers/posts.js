@@ -13,6 +13,7 @@ export const createPost = async (req, res) => {
   const post = req.body
 
   const newPost = new PostMessage(post)
+  console.log("Post data", post)
 
   try {
     await newPost.save()

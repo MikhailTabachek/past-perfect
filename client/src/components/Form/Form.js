@@ -16,6 +16,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     dispatch(createPost(postData))
+    console.log(postData)
   }
 
   const clear = () => {
