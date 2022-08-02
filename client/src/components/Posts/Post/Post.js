@@ -18,7 +18,10 @@ const Post = ( {post} ) => {
         <Typography variant="body2">{moment(post.createdAt).fromNow()}</Typography>
       </div>
       <div className={classes.overlay2}>
-        <Button style={{color: 'white'}} size='small' onClick={() => {}}>
+        <Button 
+            style={{color: 'white'}} 
+            size='small' 
+            onClick={() => {}}>
           <MoreHorizIcon fontSize="default"/>
         </Button>
       </div>
@@ -34,7 +37,9 @@ const Post = ( {post} ) => {
           Likes 
           {post.likeCount}
         </Button>
-        <Button size="small" color="primary" onClick={() => {}}>
+        <Button size="small" color="primary" onClick={() => {
+
+          }}>
           <DeleteIcon fontSize="small"/>
           Delete
         </Button>
