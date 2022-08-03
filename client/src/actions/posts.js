@@ -23,9 +23,9 @@ export const createPost = (post) => async(dispatch) => {
   }
 }
 
-export default updatePost = (id, post) => async(dispatch) =>{
+export default updatePost = (id, post) => async (dispatch) => {
   try {
-    const {data} = await api.ipdatePost(id, post)
+    const {data} = await api.updatePost(id, post)
     dispatch({ type: 'UPDATE', payload: data})
   } catch (error) {
     console.log(error.message)
