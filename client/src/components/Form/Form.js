@@ -30,13 +30,16 @@ const Form = ( { currentId, setCurrentId }) => {
       dispatch(updatePost(currentId, postData))
     } else {
       dispatch(createPost(postData))
-
     }
-
+    
+    clear()
   }
 
   const clear = () => {
-
+    setCurrentId(null)
+    setPostData({
+      creator:'', title:'', message:'', tags:'', selectedFile:''
+    })
   }
   return(
     <Paper className={classes.paper}>
